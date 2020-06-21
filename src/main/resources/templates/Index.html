@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/index.css">
+	
+	<title>--Home--</title>
+</head>
+<body>
+	
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <!-- Definimos um botao para apresentacao dos itens da 
+	navbar caso ela [colapse], entao chamaremos componente com 
+	id="menu" e exibimos as informacoes aqui dentro do botao -->
+      <button type="button" class="navbar-toggle collapsed"
+      	data-toggle="collapse" data-target="#menu" aria-expanded="false">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logotipo" href="#">
+		<img alt="WatchIdea" src="/images/logo_cursoBoots.png">
+      </a>
+    </div>
+
+	<!-- Abaixo criaremos um navbar que ao minimizar muito a tela
+	ele colapsa para ficar responsivo, atribuimos id="menu" -->
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Menu <span class="sr-only"></span></a></li>
+        <li><a href="#">Ordens de Serviço</a></li>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Funcionários</a></li>
+        <li><a href="#">Serviços</a></li>
+      </ul>
+      
+       <!-- Insercao do DROPDOWN -->
+       <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+          	aria-haspopup="true" aria-expanded="false">Minha Conta <span class="caret"></span></a>
+          <ul class="dropdown-menu perfil">
+          	<!-- Insercao Avatar. -->
+          	<!-- "hidden-xs" esconde componente se M.query=XS  -->
+	      	<div class="col-sm-4 hidden-xs">
+	        	<img class="img-responsive img-rounded" src="https://api.adorable.io/avatars/100/watchidea.png">
+	        </div>
+	        <div class="col-sm-8">
+	          <li><a>[Usuario Logado]</a></li>
+	          <li><a href="#">Alterar Perfil</a></li>
+	          <li role="separator" class="divider"></li>
+	          <li><a href="#">Sair</a></li>
+	        </div>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+			
+	<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

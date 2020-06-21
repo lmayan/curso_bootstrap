@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/login.css">
+	
+	<title>Minha página</title>
+</head>
+<body>
+
+	<!--
+		System Grid Bootstrap.
+		| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+		
+		Breakpoints Bootstrap
+		(Large) LG: >= 1200px
+		(Medium) MD: >= 992px < 1200px
+		(Small) SM: >= 768px < 992px
+		(X-Small) XS: < 768px
+		
+	-->
+	
+	<div class="container">
+		<h1>Meu Titulo</h1>
+		<p>Um paragrafo qualquer para preenchimento do conteudo!</p>
+		
+		<div class="row">
+			<div class="col-xs-12">Texto sera exibido em 12 colunas
+			da tela em dispositivos (XS) </div>
+		</div>
+		
+		<div class="row">
+			<!-- Dentro da class="" do componente voce pode definir como sera
+		a visualizacao do componente em cada tipo de dispositivo -->
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<p>Texto sera exibido em 12 colunas em dispositivos (XS)
+				<p>Texto sera exibido em 6 colunas em dispositivos (SM)
+				<p>Texto sera exibido em 4 colunas em dispositivos (MD)
+				<p>Texto sera exibido em 3 colunas em dispositivos (LG)
+			</div>
+		</div>
+		<p>
+		<p>
+		______________________SEPARACAO_____________________
+		<p>
+		<p>
+		<div class="row">
+		 <!-- XS serao 2 colunas, no SM serao 3 colunas -->
+			<div class="col-xs-6 col-sm-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title"> Titulo do Painel</h3>
+					</div>
+					<div class="panel-body">
+						COLUNA 1 Um paragrafo qualquer para preenchimento do conteudo!
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xs-6 col-sm-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title"> Titulo do Painel</h3>
+					</div>
+					<div class="panel-body">
+						COLUNA 2 Um paragrafo qualquer para preenchimento do conteudo!
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xs-6 col-sm-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title"> Titulo do Painel</h3>
+					</div>
+					<div class="panel-body">
+						COLUNA 3 Um paragrafo qualquer para preenchimento do conteudo!
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

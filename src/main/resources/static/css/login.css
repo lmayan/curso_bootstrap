@@ -1,0 +1,34 @@
+body {
+	min-height: 100vh;
+	background-color: #CCC;
+	background-image: url('https://unsplash.it/g/1500/800?random');
+	
+	/* Define o body em 100% da pagina, para aplicarmos os efeitos */
+	/* No background-image usamos um site que gera imagens aleatorias para
+	o nosso sistema e definimos alguns parametros nele:
+	/g = define a escala de CINZA
+	/1500/800 = define a resolucao das imagens geradas
+	?random = gera imagens aleatorias a cada requisicao 
+	Para saber mas definicoes acesse: https://unsplash.it */
+}
+
+.login-form{
+	margin-top: 50vh;
+	background-color: rgba(0,0,0,.9); /*.9 = 90% de transparencia*/
+	color: #FFF;
+	
+	transform: translateY(-50%);
+	/*A funcao transform aplica a centralizacao do componente, quando tb
+	aplicada tb o margin-top, fazendo a equivalencia de proporcao 
+	do eixo VERTICAL (Y)*/
+}
+
+.login-form h1{
+	margin: -40px 0 1px 0;
+}
+
+.login-form h2{
+	margin: -30px 0 20px; /* 0 para cima, 0 para direita/esquerda, 5 para baixo */
+	font-size: 1em;
+}
+
