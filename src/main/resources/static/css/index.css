@@ -13,8 +13,18 @@
 	width: 350px;
 }
 
-.perfil li:first-child{
+.perfil li:first-child {
 	font-size: 1.3em;
 	font-weight: bold;
 	margin-bottom: 5px;
+}
+
+.cabecalho h1 {
+	margin: 0px;
+	font-size: 3em;
+}
+
+/*CSS usado para centralizar o campo de busca com o 'cabecalho'*/
+.divbusca {
+	margin-top: 12px;
 }
