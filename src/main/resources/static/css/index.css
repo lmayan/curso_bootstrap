@@ -28,3 +28,8 @@
 .divbusca {
 	margin-top: 12px;
 }
+
+/*CSS usado para ajuste da tabela dar mais espaco no topo do h1*/
+.tb-os {
+	margin-top: 30px;
+}
