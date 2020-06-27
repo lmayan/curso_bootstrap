@@ -33,3 +33,20 @@
 .tb-os {
 	margin-top: 30px;
 }
+
+.paginacao .pagination {
+	margin: 0;
+}
+
+/* Cria MediaQuery para dispositivos com ate 767px, aplica o style 
+CSS definido nos componentes*/
+@media (max-width: 767px){
+	.paginacao{
+		text-align: center;
+	}
+	
+	.paginacao .pagination {
+		margin-top: 20px;
+	}
+
+}

@@ -187,6 +187,89 @@
 		</table>
 	</div>
 	
+	<!-- Inserindo Paginacao no RODAPE -->
+	<footer>
+		<div class="col-sm-6">
+			<button class="btn btn-primary" data-toggle="modal" 
+				data-target="#NovaOS">Nova Ordem de Serviço</button>
+		</div>
+		<div class="col-sm-6 paginacao text-right">
+			<ul class="pagination">
+				<li class="disabled"><a href=""><span><<</span></a></li>
+				<li class="active"><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+				<li><a href=""><span>>></span></a></li>
+			</ul>
+		</div>
+	</footer>
+	
+	<!-- Inserindo MODAL do botao de "Nova Ordem de Serviço" -->
+	<div class="modal fade" id="NovaOS">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4>Nova Ordem de Serviço</h4>
+				</div>
+				<form>
+					<!-- Inserindo entrada de dados da OS -->
+					<div class="modal-body">
+						<div class="row">
+							<div class="form-group col-xs-12">
+								<label>Código da OS</label>
+								<p class="form-control-static">4123</p>
+								<!-- "form-control-static" nao permite que 
+									o campo seja editavel -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-sm-5">
+								<label for="cliente">Cliente</label>
+								<select id="cliente" class="form-control">
+									<option value="">Selecione...</option>
+									<option value="1">Cliente 1 Cadastrado</option>
+									<option value="2">Cliente 2 Cadastrado</option>
+									<option value="3">Cliente 3 Cadastrado</option>
+								</select>
+							</div>
+							<div class="form-group col-sm-7">
+								<label for="servico">Serviços</label>
+								<select id="servico" class="form-control">
+									<option value="">Selecione...</option>
+									<option value="1">Ajuste de Data/Hora</option>
+									<option value="2">Conserto engrenagem</option>
+									<option value="3">Troca de Bateria</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-xs-12">
+								<label for="observacao">Observação</label>
+								<textarea rows="3" id="observacao" class="form-control"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-sm-4">
+								<label for="valor">Valor</label>
+								<div class="input-group">
+									<div class="input-group-addon">R$</div>
+									<input type="text" name="valor" id="valor" 
+										class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="reset" class="btn btn-danger">Limpar</button>
+						<button type="submit" class="btn btn-primary">Salvar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
 </div>
 			
 	<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
