@@ -20,4 +20,22 @@ public class InicioController {
 		return mv;
 	}
 	
+	@RequestMapping("/abas")
+	public ModelAndView abas() {
+		ModelAndView mv = new ModelAndView("Abas");
+		return mv;
+	}
+	
+	@RequestMapping("/collapse")
+	public ModelAndView collapse() {
+		ModelAndView mv = new ModelAndView("Collapse");
+		return mv;
+	}
+	
+	@RequestMapping("/carousel")
+	public ModelAndView carousel() {
+		ModelAndView mv = new ModelAndView("Carousel");
+		return mv;
+	}
+	
 }

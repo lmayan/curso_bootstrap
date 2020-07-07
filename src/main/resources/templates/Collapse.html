@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	
+	<title>Collapse</title>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Usando o COLLAPSE</h1>
+		
+		<div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a href="#Painel1" data-toggle="collapse" 
+							data-parent="#accordion">Painel 1</a>
+					</h4>
+				</div>
+				
+				<div class="panel-collapse collapse in" id="Painel1">
+					<div class="panel-body">
+						<p>
+							Conteudo do COLLAPSE
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a href="#Painel2" data-toggle="collapse"
+							data-parent="#accordion">Painel 2</a>
+					</h4>
+				</div>
+				
+				<div class="panel-collapse collapse" id="Painel2">
+					<div class="panel-body">
+						<p>
+							Conteudo do COLLAPSE
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a href="#Painel3" data-toggle="collapse"
+							data-parent="#accordion">Painel 3</a>
+					</h4>
+				</div>
+				
+				<div class="panel-collapse collapse" id="Painel3">
+					<div class="panel-body">
+						<p>
+							Conteudo do COLLAPSE
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	
+	<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+
+</body>
+</html>
